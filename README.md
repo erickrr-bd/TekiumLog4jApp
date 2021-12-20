@@ -14,7 +14,7 @@ It uses Log4j 2.11.1 and JDK 1.8.0_181.
 
 Run it:
 
-$ docker run --name tekiumlog4japp -p 8080:8080 d0ck3rt3k1umhub/tekiumlog4japp:v1
+`docker run --name tekiumlog4japp -p 8080:8080 d0ck3rt3k1umhub/tekiumlog4japp:v1`
 
 
 # Commercial Support
