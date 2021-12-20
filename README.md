@@ -24,7 +24,7 @@ Build the Docker image by yourself:
 
 # Exploitation Steps
 
-This project is inspired by the <a href="https://github.com/christophetd/log4shell-vulnerable-app">christophetd</a> project.
+<i>Note: This project is inspired by the <a href="https://github.com/christophetd/log4shell-vulnerable-app">christophetd</a> project.</i>
 
 # Commercial Support
 ![Tekium](https://github.com/unmanarc/uAuditAnalyzer2/blob/master/art/tekium_slogo.jpeg)
