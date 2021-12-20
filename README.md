@@ -22,6 +22,10 @@ Build the Docker image by yourself:
 
 `docker run -p 8080:8080 --name tekiumlog4japp tekiumlog4japp`
 
+# Exploitation Steps
+
+This project is inspired by the <a href="https://github.com/christophetd/log4shell-vulnerable-app">christophetd</a> project.
+
 # Commercial Support
 ![Tekium](https://github.com/unmanarc/uAuditAnalyzer2/blob/master/art/tekium_slogo.jpeg)
 
