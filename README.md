@@ -19,6 +19,7 @@ Run it:
 Build the Docker image by yourself:
 
 `docker build . -t tekiumlog4japp`
+
 `docker run -p 8080:8080 --name tekiumlog4japp tekiumlog4japp`
 
 # Commercial Support
