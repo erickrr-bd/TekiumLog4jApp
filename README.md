@@ -10,6 +10,8 @@ Application developed in Java that simulates an application vulnerable to CVE-20
 
 It uses Log4j 2.11.1 and JDK 1.8.0_181.
 
+![TekiumLog4jApp](https://github.com/erickrr-bd/TekiumLog4jApp/blob/master/screens/screen.jpg)
+
 # Running
 
 Run it:
@@ -40,7 +42,7 @@ Build the Docker image by yourself:
 
 - Notice the output of JNDIExploit, showing it has sent a malicious LDAP response and served the second-stage payload:
 
-
+![TekiumLog4jApp](https://github.com/erickrr-bd/TekiumLog4jApp/blob/master/screens/response.jpg)
 
 - To confirm that the code execution was successful, notice that the file /tmp/tekium_prueba was created in the container running the vulnerable application:
 
