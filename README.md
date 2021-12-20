@@ -16,6 +16,10 @@ Run it:
 
 `docker run --name tekiumlog4japp -p 8080:8080 d0ck3rt3k1umhub/tekiumlog4japp:v1`
 
+Build the Docker image by yourself:
+
+`docker build . -t tekiumlog4japp`
+`docker run -p 8080:8080 --name tekiumlog4japp tekiumlog4japp`
 
 # Commercial Support
 ![Tekium](https://github.com/unmanarc/uAuditAnalyzer2/blob/master/art/tekium_slogo.jpeg)
